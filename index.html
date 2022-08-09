@@ -13,13 +13,13 @@
                     <a href="#">
                         <img src="./img/inst.svg" alt="инстаграм" class="inst">
                     </a>
-                    <ul class="nav">
+                    <ul class="nav d-none" >
                         <li><a href="#"><p>Главная</p></a></li>
                         <li><a href="./our-team.html" target="_self"><p>Мастера</p></a></li>
                         <li><a href="#"><p>Косметика</p></a></li>
                     </ul>
                     <img src="./img/logo.svg" alt="логотип" class="logo">
-                    <ul class="nav">
+                    <ul class="nav d-none">
                         <li><a href="#"><p>Акции</p></a></li>
                         <li><a href="#"><p>Отзывы</p></a></li>
                         <li><a href="./contacts.html" target="_self"><p>Контакты</p></a></li>
@@ -33,7 +33,15 @@
                         <img src="./img/close-icon.svg" alt="закрыть" class="close">
                     </button>
                     <div class="inner-sidebar">
-                        <div class="text-inner-sidebar">
+                        <ul class="nav responsive">
+                            <li><a href="#"><p>Главная</p></a></li>
+                            <li><a href="./our-team.html" target="_self"><p>Мастера</p></a></li>
+                            <li><a href="#"><p>Косметика</p></a></li>
+                            <li><a href="#"><p>Акции</p></a></li>
+                            <li><a href="#"><p>Отзывы</p></a></li>
+                            <li><a href="./contacts.html" target="_self"><p>Контакты</p></a></li>
+                        </ul>
+                        <div class="text-inner-sidebar d-none">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Ipsum, adipiscing amet in egestas sem dui, arcu faucibus scelerisque. 
@@ -41,7 +49,7 @@
                                 Tortor donec pellentesque leo ac placerat. Morbi.
                             </p>
                         </div>
-                        <div class="contacts">
+                        <div class="contacts d-none">
                             <div class="title-contacts">
                                 <h4>
                                     Контакты
@@ -65,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts">
+                        <div class="contacts d-none">
                             <div class="title-contacts">
                                 <h4>
                                     Режим работы
@@ -105,17 +113,18 @@
             <div class="container comment">
                 <div class="comment-space">
                     <div class="comment-img">
-                        <img src="./img/comment''.svg" alt="ковычки">
+                        <img src="./img/comment''.svg" alt="ковычки" class="img-comment">
                     </div>
                     <div class="comment-text">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae amet. Ipsum, pharetra donec ornare velit. 
                             Id at quisque accumsan risus ac ipsum ut. Sit elit, facilisi proin non malesuada sociis tristique. 
                             Viverra augue lorem ut quisque quam tortor, malesuada iaculis. 
-                        <br> <br>
-                            Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra rutrum. 
-                            Fames ultrices condimentum tortor nec penatibus. 
-                            Velit imperdiet sapien fringilla vestibulum sit fames.
+                            <span class="separator">
+                                Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra rutrum. 
+                                Fames ultrices condimentum tortor nec penatibus. 
+                                Velit imperdiet sapien fringilla vestibulum sit fames.
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -203,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contributors">
+                <div class="contributors d-none">
                     <img src="./img/contributors/img1.png" alt="KEVIN" class="img1">
                     <img src="./img/contributors/img2.png" alt="ORIBE" class="img2">
                     <img src="./img/contributors/img3.png" alt="ALTERNA" class="img3">
@@ -217,7 +226,7 @@
                     <div class="title-work">
                         <h2>Наши  работы</h2>
                     </div>
-                    <div class="list-work">
+                    <div class="list-work d-none">
                         <ul class="nav">
                             <li><a href="#"><p>Показать все</p></a></li>
                             <li><a href="#"><p>Парикмахерские услуги</p></a></li>
@@ -254,13 +263,43 @@
                             <img src="./img/our-work/work-1.png" alt="красотаа уф" class="img-works">
                         </div>
                     </div>
+
+                    <div class="img-all mobile">
+                        <div class="img-responsive-all">
+                            <div class="img-works responsive-grid">
+                                <img src="./img/our-work/work-9.png" alt="красотаа" class="img-works ">
+                                <img src="./img/our-work/work-8.png" alt="красотаа" class="img-works">
+                            </div>
+                            <div class="img-works">
+                                <img src="./img/our-work/work-6.png" alt="красотаа" class="img-works">
+                            </div>
+                        </div>
+                        <div class="img-responsive-all another">
+                            <div class="img-works">
+                                <img src="./img/our-work/work-7.png" alt="красотаа" class="img-works">
+                            </div>
+                            <div class="img-works  responsive-grid">
+                                <img src="./img/our-work/work-3.png" alt="красотаа" class="img-works">
+                                <img src="./img/our-work/work-5.png" alt="красотаа" class="img-works">
+                            </div>
+                        </div>
+                        <div class="img-responsive-all">
+                            <div class="img-works responsive-grid">
+                                <img src="./img/our-work/work-4.png" alt="красотаа" class="img-works ">
+                                <img src="./img/our-work/work-2.png" alt="красотаа" class="img-works">
+                            </div>
+                            <div class="img-works">
+                                <img src="./img/our-work/work-1.png" alt="красотаа" class="img-works">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <footer id="footer">
             <div class="container">
                 <div class="footer">
-                    <img src="./img/logo.svg" alt="логотип" class="logo">
+                    <img src="./img/logo.svg" alt="логотип" class="logo d-none">
                     <div class="contacts">
                         <div class="title-contacts">
                             <h4>
@@ -304,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="insta">
+                    <div class="insta d-none">
                         <h4>
                             Мы в Instagram
                         </h4>
